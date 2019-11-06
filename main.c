@@ -6,9 +6,10 @@ int main(int argc, char* argv[])
 {
     int input, output;
     if (argc == 1) {
-        printf("Enter number of elements in relation\n:");
+        printf("Enter number of elements in set\n:");
         if (scanf("%d", &input) != 1) {
             fprintf(stderr, "E:Invalid Input");
+            return 1;
         }
     } else {
         input = atoi(argv[1]);
